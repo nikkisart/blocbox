@@ -142,3 +142,131 @@ header .hero img{
     border: 2px solid #87dd30;
     box-shadow: 0px 2px 0px 0px #22894e;
 }
+/* Benefits */
+.benefits {
+    text-align: center;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+/*    display: inline-block;*/
+/*    position: relative;*/
+/*    width: 454px;*/
+}
+.benefits i {
+    font-size: 60px;
+    margin: 0;
+    vertical-align: middle;
+    margin-top: 75px;
+}
+.right {
+    color: black;
+/*    display: block;*/
+    width: 450px;
+/*    position: relative*/
+/*    float: right;*/
+/*    clear: both;*/
+}
+.left {
+    color: black;
+/*    display: block;*/
+    width: 450px;
+/*    position: relative;*/
+/*    float: left;*/
+/*    clear: both;*/
+}
+#note {
+    background-image: url('images/Create-note.png');
+    background-repeat: no-repeat;
+    height: 454px;
+    width: 1440px;
+/*    padding-left: 862px;*/
+    margin: 0 auto;
+}
+#image {
+    background-image: url('images/Save-images.png');
+    height: 454px;
+    width: 1440px;
+    margin: 0 auto;
+}
+#link {
+    background-image: url('images/Add-Links.png');
+    height: 454px;
+    width: 1440px;
+    margin: 0 auto;
+}
+/* Pricing */
+.pricing {
+    background: #028ea3 url('images/Pricing-bkg.png') top center no-repeat;
+    background: url('images/Pricing-bkg.png') top center no-repeat, linear-gradient (206deg, #373737 0%, #028ea3 94%);
+    background-size: cover;
+    text-align: center;
+    padding: 4em 0;
+    width: 1440px;
+    margin: auto;
+}
+.pricing h2, .pricing p {
+    color: #e5eaf2;
+}
+.pricing ul {
+    margin: 0 auto;
+    padding: 2em 0;
+}
+.pricing ul li {
+    list-style-type: none;
+}
+.box {
+    padding: 0 15px 15px;
+    background: #e5eaf2;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+    min-height: 439px;
+    position: relative;
+    margin-top: 25px;
+}
+.box.middle {
+    min-height: 485px;
+    margin-top: 0px;
+}
+.box h3 {
+    font-family: "Coda Caption", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    background: #f37a28;
+    left: 0;
+    right: 0;
+    top: 0;
+    text-align: center;
+    margin: 0 -15px 40px;
+    padding: 20px 0;
+}
+.box h4 {
+    font-size: 50px;
+    margin: 40px 0 10px;
+    color: #028ea3;
+}
+.box h4 span {
+    font-size: 32px;
+    vertical-align: top;
+}
+.box h4 span.month {
+    font-family: "Glegoo", Times, serif;
+    font-weight: 800;
+    color: #373737;
+    font-size: 20px;
+    vertical-align: middle;
+}
+.box ul li {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 400px;
+}
+.box .btn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+.small {
+    font-size: 12px;
+    line-height: 15px;
+    font-style: italic;
+}
