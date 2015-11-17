@@ -107,7 +107,7 @@ header nav ul > li.btn-outline:hover > a {
     color: #373737;
 }
 header .hero {
-    text-align: left;
+    text-align: center;
     display: block;
     position: relative;
 }
@@ -116,21 +116,32 @@ header .hero h1 {
     font-weight: normal;
     margin: 95px 0 0;
 /*    float: left;*/
-    display: block;
+/*    display: block;*/
 /*    position: relative;*/
 }
 header .hero p {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 28px;
     font-weight: 100;
-    margin: 10px 0 40px;
+    margin: 30px 0 40px;
+/*    float: left;*/
+/*    clear: both;*/
+/*    display: inline-block;*/
+}
+/*is adding an extra div here the best solution?*/
+header .cta-1 {
+    display: inline-block;
     float: left;
-    display: block;
+    
 }
 header .hero img{
-    display: inline-block;
+/*    display: inline-block;*/
+/*    position: relative;*/
+/*    right: 0px;*/
     float: right;
-    margin: 3em 0;
+/*I couldn't figure out how to accomplish flush right to the container without adding this negative margin?*/
+    margin-right: -134px;
+/*    margin: 0;*/
 }
 .btn {
     border-radius: 4px;
@@ -141,6 +152,8 @@ header .hero img{
     background: #87dd30;
     border: 2px solid #87dd30;
     box-shadow: 0px 2px 0px 0px #22894e;
+/*    float: left;*/
+    clear: both;
 }
 /* Benefits */
 .benefits {
@@ -155,12 +168,21 @@ header .hero img{
 }
 .benefits i {
     font-size: 60px;
+    color: #028ea3;
     margin: 0;
     vertical-align: middle;
     margin-top: 75px;
 }
+.benefits h2 {
+    color: #028ea3;
+}
+.benefits p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 800;
+}
 .right {
-    color: black;
+    color: #373737;
 /*    display: block;*/
     width: 450px;
 /*    position: relative*/
@@ -168,7 +190,7 @@ header .hero img{
 /*    clear: both;*/
 }
 .left {
-    color: black;
+    color: #373737;
 /*    display: block;*/
     width: 450px;
 /*    position: relative;*/
@@ -194,6 +216,19 @@ header .hero img{
     height: 454px;
     width: 1440px;
     margin: 0 auto;
+}
+/*are adding extra divs here the best solution?*/
+.content-right {
+    width: 450px;
+    display: block;
+    float: right;
+    margin-right: 100px;
+}
+.content-left {
+    width: 450px;
+    display: block;
+    float: left;
+    margin-left: 100px;
 }
 /* Pricing */
 .pricing {
