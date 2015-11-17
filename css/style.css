@@ -156,6 +156,7 @@ header .hero img{
     clear: both;
 }
 /* Benefits */
+/*Can't understand why there are a few pixels of space between the hero and the first benefits section*/
 .benefits {
     text-align: center;
     margin-top: 0px;
