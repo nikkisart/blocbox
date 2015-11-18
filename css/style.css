@@ -378,3 +378,51 @@ hr.style-two {
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
+/*Footer*/
+footer {
+    background-color: #028ea3;
+    background-image: linear-gradient(to top, #373737 50%, #028ea3 50%);
+    color: #fff;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    width: 1440px;
+    margin: auto;
+}
+
+footer p, footer nav ul {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px 0;
+/*This isn't what I think it should be but it halfway works*/
+    margin-left: -200px;
+}
+/*
+footer p {
+    margin-left: -200px;
+}
+*/
+footer nav ul li {
+    list-style-type: none;
+    display: inline;
+}
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+footer .right-footer-block {
+    background-color: transparent;
+}
+footer .logo {
+    padding: 1.35em 0;
+    margin: 0 300px;
+    display: block;
+}
+@media (min-width: 991px) {
+    footer {
+        background-color: #028ea3;
+        background-image: linear-gradient(to bottom,#028ea3 0%,#373737 90%)
+    }
+}
