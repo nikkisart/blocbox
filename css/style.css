@@ -285,7 +285,7 @@ header .hero img{
 }
 .box h4 span.month {
     font-family: "Glegoo", Times, serif;
-    font-weight: 800;
+    font-weight: 700;
     color: #373737;
     font-size: 20px;
     vertical-align: middle;
@@ -306,3 +306,67 @@ header .hero img{
     line-height: 15px;
     font-style: italic;
 }
+.testimonials {
+    padding: 4em 0;
+    text-align: center;
+    background: #fff;
+    width: 1440px;
+    margin: auto;
+}
+.testimonials h2 {
+    color: #373737;
+}
+.testimonials ul li {
+    list-style-type: none;
+}
+.testimonials blockquote {
+    color: #e5eaf2;
+    text-align: left;
+    font-style: italic;
+    background: #028ea3;
+    position: relative;
+    padding: 30px;
+    width: auto;
+    margin: 0;
+}
+.testimonials ul li:before {
+    content: '\201C';
+    font-family: "Coda Caption", sans-serif;
+    font-weight: 800;
+    font-size: 80px;
+    position: absolute;
+    left: 10%;
+    top: -1%;
+    z-index: 1;
+    color: rgba(255,255,255,0.3);
+}
+.testimonials blockquote:after {
+    top: 100%;
+    left: 13%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-top-color: #028ea3;
+    border-width: 10px;
+    margin-left: -10px;
+}
+.testimonials img {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    float: left;
+    display: inline-block;
+    margin: 20px 10px 0 0;
+}
+/*Why again do we use the no space parent/class designation vs. the parent followed by the class with a space?*/
+.testimonials p.name {
+    float: left;
+    display:inline-block;
+    text-align: left;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
