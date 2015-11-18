@@ -17,7 +17,7 @@ h2 {
 }
 p {
     font-size: 16px;
-    line-height: 19px;
+    line-height: 30px;
     font-weight: 400;
 }
 
@@ -121,7 +121,7 @@ header .hero h1 {
 }
 header .hero p {
     font-size: 18px;
-    line-height: 28px;
+    line-height: 30px;
     font-weight: 100;
     margin: 30px 0 40px;
 /*    float: left;*/
@@ -179,7 +179,7 @@ header .hero img{
 }
 .benefits p {
     font-size: 18px;
-    line-height: 26px;
+    line-height: 32px;
     font-weight: 800;
 }
 .right {
@@ -365,8 +365,9 @@ header .hero img{
 .testimonials p.name {
     float: left;
     display:inline-block;
-    text-align: left;
+    text-align: center;
     font-size: 13px;
     margin-top: 30px;
+    line-height: 16px;
 }
 
