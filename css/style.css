@@ -23,10 +23,10 @@ p {
 
 /* Grid */
 .container{
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+/*    margin-right: auto;*/
+/*    margin-left: auto;*/
+/*    padding-left: 15px;*/
+/*    padding-right: 15px;*/
     position: relative;
     width: 1440px;
 }
@@ -69,16 +69,29 @@ p {
         width: 1170px;
     }
 }
+
+@media (min-width: 1500px) {
+    .container {
+        width: 1440px;
+    }
+}
 /* Header */
 header {
     color: #ffffff;
     background: #028ea3;
-    background-image: linear-gradient(180deg, #028ea3 0%, #373737 90%);
-    width: 1440px;
+    background-image: url('../images/laptop.png'), linear-gradient(180deg, #028ea3 0%, #373737 90%);
+    background-position: right bottom;
+    background-repeat: no-repeat;
     margin: auto;
+    height: 750px;
+/*    width: 1440px;*/
 }
 header nav {
     padding: 1em 0;
+}
+header nav img {
+    float: left;
+    margin-left: 100px;
 }
 header nav ul {
     display: inline;
@@ -110,6 +123,7 @@ header .hero {
     text-align: center;
     display: block;
     position: relative;
+/*    background-image: linear-gradient(180deg, #028ea3 0%, #373737 90%);*/
 }
 header .hero h1 {
     font-size: 30px;
@@ -128,20 +142,27 @@ header .hero p {
 /*    clear: both;*/
 /*    display: inline-block;*/
 }
-/*is adding an extra div here the best solution?*/
 header .cta-1 {
     display: inline-block;
     float: left;
+    clear: left;
     
 }
-header .hero img{
+/*header .hero-img{*/
 /*    display: inline-block;*/
 /*    position: relative;*/
 /*    right: 0px;*/
+/*
+    width: 100%;
     float: right;
-/*I couldn't figure out how to accomplish flush right to the container without adding this negative margin?*/
-    margin-right: -134px;
+*/
+/*    margin-right: -134px;*/
 /*    margin: 0;*/
+}
+header .site-logo img {
+    text-align: left;
+    display: block;
+    float: left;  
 }
 .btn {
     border-radius: 4px;
@@ -185,7 +206,7 @@ header .hero img{
 .right {
     color: #373737;
 /*    display: block;*/
-    width: 450px;
+/*    width: 450px;*/
 /*    position: relative*/
 /*    float: right;*/
 /*    clear: both;*/
@@ -202,23 +223,24 @@ header .hero img{
     background-image: url('../images/Create-note.png');
     background-repeat: no-repeat;
     height: 454px;
-    width: 1440px;
+    width: 100%;
 /*    padding-left: 862px;*/
     margin: 0 auto;
 }
 #image {
     background-image: url('../images/Save-Images.png');
+    background-repeat: no-repeat;
     height: 454px;
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
 }
 #link {
     background-image: url('../images/Add-Links.png');
     height: 454px;
-    width: 1440px;
+/*    width: 1440px;*/
     margin: 0 auto;
 }
-/*are adding extra divs here the best solution?*/
+
 .content-right {
     width: 450px;
     display: block;
@@ -238,7 +260,7 @@ header .hero img{
     background-size: cover;
     text-align: center;
     padding: 4em 0;
-    width: 1440px;
+/*    width: 1440px;*/
     margin: auto;
 }
 .pricing h2, .pricing p {
@@ -310,7 +332,7 @@ header .hero img{
     padding: 4em 0;
     text-align: center;
     background: #fff;
-    width: 1440px;
+/*    width: 1440px;*/
     margin: auto;
 }
 .testimonials h2 {
@@ -364,7 +386,7 @@ header .hero img{
     display: inline-block;
     margin: 20px 10px 0 0;
 }
-/*Why again do we use the no space parent/class designation vs. the parent followed by the class with a space?*/
+
 .testimonials p.name {
     float: left;
     display:inline-block;
@@ -377,6 +399,8 @@ hr.style-two {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    display: block;
+    clear: both;
 }
 /*Footer*/
 footer {
@@ -387,7 +411,7 @@ footer {
     position: relative;
     overflow: hidden;
     z-index: 0;
-    width: 1440px;
+    width: 100%;
     margin: auto;
 }
 
@@ -397,7 +421,7 @@ footer p, footer nav ul {
     text-align: center;
     margin: 10px 0;
 /*This isn't what I think it should be but it halfway works*/
-    margin-left: -200px;
+/*    margin-left: -200px;*/
 }
 /*
 footer p {
@@ -411,13 +435,14 @@ footer nav ul li {
 footer nav ul li a {
     color: #fff;
     text-decoration: none;
+/*    text-align: center;*/
 }
 footer .right-footer-block {
-    background-color: transparent;
+/*    background-color: transparent;*/
 }
 footer .logo {
-    padding: 1.35em 0;
-    margin: 0 300px;
+    padding: 1.3em 0;
+    margin-left: 100px;
     display: block;
 }
 @media (min-width: 991px) {
