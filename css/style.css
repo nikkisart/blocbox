@@ -451,3 +451,201 @@ footer .logo {
         background-image: linear-gradient(to bottom,#028ea3 0%,#373737 90%)
     }
 }
+/*Dashboard*/
+.dashboard {
+    background: #f7f7f7;
+}
+.left-nav {
+    height: 100vh;
+    width: 14.6666666667%;
+    color: #fff;
+    background: #373737;
+/*    background-image: linear-gradient(206deg, #028ea3 0%, #373737 94%);*/
+    float: left;
+    position: fixed;
+    display: block;
+}
+.left-nav .site-logo {
+    padding: 20px 0;
+    background: #373737;
+    display: block;
+    text-align: center;
+}
+.left-nav .items {
+    padding: 0 6%;
+}
+.left-nav .items p {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 15px;
+}
+.left-nav .items ul {
+    margin: 0 0 40px;
+    padding: 0;
+}
+.left-nav .items ul li {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+.left-nav .items ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 100;
+}
+.left-nav .items ul li a i {
+    width: 16px;
+    text-align: center;
+    margin-right: 8px;
+}
+.left-nav .items ul li.active {
+    background-color: palegreen;
+}
+/*Left Navbar Settings*/
+.left-nav .settings {
+    position: absolute;
+    background: #22303e;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+}
+.left-nav .settings img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-left: 10px;
+    display: inline-block;
+}
+.left-nav .settings p {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 8px;
+    font-weight: 800;
+    margin: 0 0 0 10px;
+}
+.left-nav .settings a {
+    color: #fff;
+    text-decoration: none;
+    text-align: right;
+    float: right;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+/*Content*/
+.content {
+    padding: 6em 1% 1.5em;
+    float: right;
+    width: 98%;
+    position: relative;
+}
+.content .header {
+    margin: 0 1% 20px;
+}
+.content .header h1 {
+    font-family: "Coda Caption", Helvetica, Arial, sans-serif;
+    margin: 0 0 30px;
+    font-size: 36px;
+    color: #028ea3;
+    line-height: 44px;
+    float: left;
+    display: inline-block;
+}
+.content .header > a {
+    float: right;
+}
+.content-item {
+    width: 96%;
+    margin: 0 2% 25px;
+    float: left;
+    display: block;
+}
+.item-box {
+    display: block;
+    height: 230px;
+    background: #fff;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.40);
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+/*Larger Mobile Devices*/
+@media (min-width:460px) {
+    .content {
+        padding: 1.5em 1%;
+        float: right;
+        width: 90%;
+        position: relative;
+    }
+    .content-item {
+        width: 46%;
+        margin: 0 2% 25px;
+        float: left;
+        display: block;
+    }
+}
+/*Tablets*/
+@media (min-width: 768px) {
+    .content {
+        padding: 1.5em 5%;
+        float: right;
+        width: 90%;
+        position: relative;
+    }
+    .content > .container {
+        width: 700px;
+    }
+    .content-item {
+        width: 31.33333%;
+        margin: 0 1% 25px;
+    }
+}
+/*Laptops and Desktops*/
+@media (min-width: 992px) {
+    .content {
+        padding: 1.5em 1%;
+        float: right;
+        width: 83.3333333%;
+        position: relative;
+    }
+    .content > .container {
+        width: auto;
+    }
+    .content-item {
+        width: 23%;
+        margin: 0 1% 25px;
+    }
+}
+.item-box > img {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    top:0;
+    left:0;
+    right:0;
+}
+.item-box h2 {
+    font-family: 'Glegoo', Verdana, serif;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 17px;
+    margin: 0;
+}
+.item-box h2 a {
+    color: #028ea3;
+    text-decoration: none;
+}
+.item-box h2 img {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+.item-box p {
+    font-size: 14px;
+    color: #373737;
+    line-height: 18px;
+    margin: 5px 0 0;
+}
