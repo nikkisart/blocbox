@@ -559,8 +559,8 @@ footer .logo {
 .left-nav .settings a {
     color: #fff;
     text-decoration: none;
-    text-align: right;
-    float: right;
+/*    text-align: right;*/
+    float: left;
     margin-right: 10px;
     margin-top: 8px;
 }
