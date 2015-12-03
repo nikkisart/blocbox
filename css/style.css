@@ -421,14 +421,8 @@ footer p, footer nav ul {
     font-weight: 400;
     text-align: center;
     margin: 10px 0;
-/*This isn't what I think it should be but it halfway works*/
-/*    margin-left: -200px;*/
 }
-/*
-footer p {
-    margin-left: -200px;
-}
-*/
+
 footer nav ul li {
     list-style-type: none;
     display: inline;
@@ -436,7 +430,7 @@ footer nav ul li {
 footer nav ul li a {
     color: #fff;
     text-decoration: none;
-/*    text-align: center;*/
+
 }
 footer .right-footer-block {
 /*    background-color: transparent;*/
@@ -446,7 +440,7 @@ footer .logo {
     margin-left: 100px;
     display: block;
 }
-@media (min-width: 991px) {
+@media (min-width: 992px) {
     footer {
         background-color: #028ea3;
         background-image: linear-gradient(to bottom,#028ea3 0%,#373737 90%)
@@ -459,20 +453,20 @@ footer .logo {
 .left-nav {
     height: 100%;
     width: 280px;
-/*    color: #fff;*/
-/*    background: #373737;*/
-/*    background-image: linear-gradient(206deg, #028ea3 0%, #373737 94%);*/
-/*    float: left;*/
+    color: #fff;
+    background: #373737;
+    background-image: linear-gradient(206deg, #028ea3 0%, #373737 94%);
+    float: left;
     position: absolute;
-/*    display: block;*/
+    display: block;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     transform: translate(-280px,0);
-        -webkit-transform: translate(-280px,0);
-        -o-transform: translate(-280px,0);
-        -moz-transform: translate(-280px,0);
+        -webkit-transform: translate(-280px,0); /**Chrome & Safari**/
+        -o-transform: translate(-280px,0); /**Opera**/
+        -moz-transform: translate(-280px,0); /**Firefox**/
 }
 .left-nav.open{
     display: block;
@@ -657,7 +651,7 @@ footer .logo {
         height: 100vh;
         width: 14.666666666%;
         color: #fff;
-        background: #34495e;
+        background: #028ea3;
         background-image: linear-gradient(206deg, #028ea3 0%, #373737 94%);
         float: left;
         position: fixed;
